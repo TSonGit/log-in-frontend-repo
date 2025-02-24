@@ -9,6 +9,11 @@ app.get('/', (req, res) => {
     res.send('ran from run_project!');
 });
 
+app.get('/log-in', (req, res) => {
+    console.log('app.get /log-in');
+    res.render('log_in_view');
+})
+
 app.listen(3000, () => {
     console.log('Server is running on http://localhost:3000');
 });
